@@ -131,8 +131,41 @@
   h1 {
     text-align: center;
     line-height: 150%;
+    max-width: 940px;
+    font-size: 48px;
   }
   
+  p {
+    text-align: center;
+    margin: 14px 0;
+  }
+
+  .button-contact {
+    padding: 14px 28px;
+    color: #fff;
+    background-color: #d34040;
+    border: 0;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 600;
+    margin: 14px 0;
+
+  }
+
+  .button-contact:hover {
+    animation: scaleButton 0.8s alternate infinite;
+  }
+
+  @keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.07);
+    }
+  }
+
   button {
     font-family: "Sosa", sans-serif;
     cursor: pointer;
