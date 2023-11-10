@@ -11,7 +11,7 @@ dataRef.on('value', function(snapshot) {
         console.log('chave', key);
         console.log('valor', valor);
 
-        if(key === 'precos') {
+        if(key === 'frigobar') {
 
             var _itemsKey = Object.entries(valor);
     
@@ -20,15 +20,13 @@ dataRef.on('value', function(snapshot) {
             for (const [key2, value2] of _itemsKey) {
                 count++;
     
-                $(".tbbarbearia tbody").append(
+                $(".tabelabarbearia tbody").append(
     
                     `<tr> +
     
                         <th scope="row">${count}</th> +
     
                         <td>${value2.nome}</td> +
-    
-                        <td>${value2.preco}</td> +
     
                     </tr>`
     
